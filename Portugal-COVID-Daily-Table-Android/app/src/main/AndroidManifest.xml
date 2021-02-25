@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gmail.etpr99.dailycovidtable">
+    package="com.gmail.etpr99.jose.dailycovidtable">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PortugalDailyCovidTable">
         <service android:name=".listeners.CovidDataAvailableListenerService" />
-        <activity android:name="com.gmail.etpr99.dailycovidtable.MainActivity">
+        <activity android:name="com.gmail.etpr99.jose.dailycovidtable.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
