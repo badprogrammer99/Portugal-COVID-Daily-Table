@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 import com.github.kittinunf.fuel.httpGet
 import com.gmail.etpr99.dailycovidtable.listeners.CovidDataAvailableListenerService
-import com.gmail.etpr99.dailycovidtable.listeners.CovidDataAvailableListenerService.CovidAvailableListenerBinder
+import com.gmail.etpr99.dailycovidtable.listeners.CovidDataAvailableListenerService.CovidDataAvailableListenerBinder
 import com.pusher.client.Pusher
 import com.pusher.client.PusherOptions
 
@@ -25,16 +25,16 @@ class MainActivity : AppCompatActivity() {
         const val HTML_COVID_TABLE_URL = "https://portugal-daily-covid-table.herokuapp.com/tables/html"
     }
 
-    lateinit var webView: WebView
+    private lateinit var webView: WebView
 
-    lateinit var pusher: Pusher
+    private lateinit var pusher: Pusher
 
-    lateinit var covidDataAvailableListenerServiceService: CovidDataAvailableListenerService
-    var isServiceBound = false
+    private lateinit var covidDataAvailableListenerServiceService: CovidDataAvailableListenerService
+    private var isServiceBound = false
 
     private var connection: ServiceConnection = object : ServiceConnection {
         override fun onServiceConnected(className: ComponentName, service: IBinder) {
-            val binder = service as CovidAvailableListenerBinder
+            val binder = service as CovidDataAvailableListenerBinder
             covidDataAvailableListenerServiceService = binder.service
             isServiceBound = true
             initPusherListener()
