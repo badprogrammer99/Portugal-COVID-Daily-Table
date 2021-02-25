@@ -19,10 +19,10 @@ import io.karn.notify.Notify.Companion.CHANNEL_DEFAULT_KEY
 import io.karn.notify.Notify.Companion.IMPORTANCE_HIGH
 
 class CovidDataAvailableListenerService: Service(), SubscriptionEventListener {
-    private val covidAvailableListenerBinder = CovidAvailableListenerBinder()
+    private val covidDataAvailableListenerBinder = CovidDataAvailableListenerBinder()
 
     override fun onBind(intent: Intent?): IBinder? {
-        return covidAvailableListenerBinder
+        return covidDataAvailableListenerBinder
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -55,7 +55,7 @@ class CovidDataAvailableListenerService: Service(), SubscriptionEventListener {
         }
     }
 
-    inner class CovidAvailableListenerBinder : Binder() {
+    inner class CovidDataAvailableListenerBinder : Binder() {
         val service: CovidDataAvailableListenerService
             get() = this@CovidDataAvailableListenerService
     }
