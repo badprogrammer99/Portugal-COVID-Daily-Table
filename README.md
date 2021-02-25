@@ -29,7 +29,7 @@ https://codepen.io/badprogrammer99/pen/NWbaNXo
 
 # Portugal COVID Daily Table Server
 
-An extension of the original Portugal COVID Daily Table script, now running 24/7 on a dedicated server.
+An extension of the original Portugal COVID Daily Table command-line program, programmed using the Spring Boot framework.
 
 Available endpoints:
 
