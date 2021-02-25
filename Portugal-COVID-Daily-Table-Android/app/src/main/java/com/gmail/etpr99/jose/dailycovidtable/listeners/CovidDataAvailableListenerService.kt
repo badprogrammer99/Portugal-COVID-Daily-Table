@@ -10,7 +10,7 @@ import android.os.IBinder
 import android.os.SystemClock
 import androidx.core.app.NotificationCompat
 
-import com.gmail.etpr99.dailycovidtable.MainActivity
+import com.gmail.etpr99.jose.dailycovidtable.MainActivity
 import com.pusher.client.channel.PusherEvent
 import com.pusher.client.channel.SubscriptionEventListener
 
