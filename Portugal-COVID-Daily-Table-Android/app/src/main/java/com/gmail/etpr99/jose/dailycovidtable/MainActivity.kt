@@ -10,8 +10,8 @@ import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 
 import com.github.kittinunf.fuel.httpGet
-import com.gmail.etpr99.dailycovidtable.listeners.CovidDataAvailableListenerService
-import com.gmail.etpr99.dailycovidtable.listeners.CovidDataAvailableListenerService.CovidDataAvailableListenerBinder
+import com.gmail.etpr99.jose.dailycovidtable.listeners.CovidDataAvailableListenerService
+import com.gmail.etpr99.jose.dailycovidtable.listeners.CovidDataAvailableListenerService.CovidDataAvailableListenerBinder
 import com.pusher.client.Pusher
 import com.pusher.client.PusherOptions
 
